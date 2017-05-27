@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<title>Mon formulaire</title>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1 id="titre">M2I Formation</h1>
+		</header>
+		
+		<section>
+			<div class="left">
+				<div class="btn-grp">
+					<a href="commandes.html">Commandes</a><br>
+					<a href="historic.html">Historique</a>
+				</div>
+			</div>
+			<div class="right">
+				<form method="post" 
+					  action="traitement.php">
+					  
+					<fieldset>
+						<legend>Formulaire : </legend>	
+						<div class="inputs">
+							<div class="group">
+								<input type="text" name="name" required>
+								<span class="bar"></span>
+								<label class="lab">Nom</label>
+							</div>
+
+							<div class="group">
+								<input type="text" name="firstname" required>
+								<span class="bar"></span>
+								<label class="lab">Prénom</label>
+							</div>
+
+							<label for="naissance">Date de naissance </label>
+							<input type="date" 
+								name="naissance" 
+								id="naissance" 
+								required><br><br>
+
+							<input type="submit" 
+								value="Valider">
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<p>Copyright tous droits réservés</p>
+			<script type="text/javascript"> </script>
+		</footer>
+	</body>
+</html>
